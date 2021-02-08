@@ -53,6 +53,7 @@ def delete_book():
                 verification = input("y/n ")
                 if verification[0].lower() == 'y':
                     book.delete()
+                    break
                 else:
                     print('Deletion canceled.')
                     break
@@ -102,7 +103,7 @@ def number_of_books():
     ui.number_of_books(books) # pass the books number_of_books function in the ui module.
 
 def quit_program():
-    ui.message('Thanks and bye!')
+    ui.message('Thank you for using this program and we hope to see you again!!')
 
 
 if __name__ == '__main__':
